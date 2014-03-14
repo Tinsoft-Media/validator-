@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title> AUTO VALIDATOR PLUGIN - Developed by Tintu C Raju </title>
+		<script src="validation.js" type="text/javascript"></script>		
+
+	</head>
+	<body>
+	
+
+	
+		<h2> <u> AUTO VALIDATOR | DEMO </u> </h2>
+
+		<!-- Form1 Started here -->
+		<form id="frm1" action="action1.php" baloon="true" bgcolor="red" border="green" color="black" color_css="true" error_color="blue">
+		<h3> Form1 ( With Baloon Type Validation )</h3>
+		<table>
+			<tr><td>Website Address : </td><td><input type="text" entitle="Website" validation="url"></td></tr>
+			<tr><td>Username (Alphabets only validation without space) : </td><td><input type="text" entitle="username" validation="alpha"> </td></tr>
+			<tr><td>Name:</td><td><input type="text" entitle="NAME" ></td></tr>
+			<tr><td>Email ( Should enter a valid email id ) : </td><td><input type="text" entitle="E-mail" validation="mail"> </td></tr>
+			<tr><td>Password ( minimum 5 maximum 8) : </td><td><input id="pass" type="password" entitle="Password" min="5" max="8"> </td></tr>
+			<tr><td>Confirm Password ( Should match with password) : </td><td><input type="password" entitle="Confirm Password" confirm="pass"> </td></tr>
+			<tr><td>Phone number ( Should be number with 10 digits) : </td><td><input type="text" entitle="Phone number" validation="num" min="10" max="10"> </td></tr>
+			<tr><td>Date of Birth ( Should be in form dd-mm-yyy ) : </td><td><input type="text" entitle="Date of Birth" validation="dmy" > </td></tr>
+			<tr><td>Gender (Required) : </td><td><input type="radio" entitle="Gender" name="gen" > Male <input type="radio" name="gen" > Female </td></tr>
+			<tr><td>Choose Hobbie ( Not Mandatory ) : </td><td><input type="checkbox" name="hobbie" req="false"> Cricket <input type="checkbox" name="hobbie" req="false">
+			 Football</td></tr>
+			<tr><td>Choose Platform ( Select atlest 2 Maximum 3 ) : </td><td>
+
+			<input type="checkbox" name="platform" entitle="Platform" min="2" max="3"> C
+			<input type="checkbox" name="platform"> C++ 
+			<input type="checkbox" name="platform"> Java 
+			<input type="checkbox" name="platform"> Cobol 
+			<input type="checkbox" name="platform"> Html 
+			<input type="checkbox" name="platform"> Javascript 
+
+
+			</td></tr>
+
+			<tr><td>Your Age ( number only maximum value = 70 minimum value=18) : </td><td><input type="text" entitle="Age" validation="num" max-value="70" min-value="18"> </td></tr>
+
+			<tr><td>Register Number (Alphabets and number only without space ) </td><td><input type="text" entitle="Register Number" validation="alphanum"> </td></tr>
+			<tr><td> Select State ( Mandatory ) </td> 
+			<td>
+			<select entitle="State">			  
+				<option value="-1"> ..select.. </option>
+				<option>Kerala</option>
+				<option>Tamilnadu</option>
+				<option>Karnataka</option>
+				<option>Maharashtra</option>
+					
+			</select>
+			 </td></tr>
+
+			<tr><td><input type="submit" value="Submit form1"></td></tr>
+		</table>
+		</form>
+		<!-- Form 1 End Here -->
+
+
+		<!-- Form 2 Start here -->
+
+		<form id="frm2" action="form2.php">
+			<h4> Form2 ( With Alert Validation )</h4>
+			<input type="text" entitle="Name"><br>
+			Profile Picture : <input type="file" value="upload" entitle="Profile picture"> <br>
+			<input type="submit" value="Submit form2"><br>
+		</form>
+
+
+		<!--- Form 2 end here -->
+
+
+
+
+	</body>
+</html>
